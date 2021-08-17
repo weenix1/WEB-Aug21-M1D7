@@ -69,7 +69,22 @@ hr {
 }
 
 table {
-   /*  border-collapse: collapse*/
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+/* table {
+   
    
    border-collapse: separate;
 }
@@ -80,7 +95,7 @@ table tr {
   border-bottom: none;
   width: 4%;
   margin: 30px auto;
-}
+} */
 
   </style>
   <body>
@@ -110,7 +125,7 @@ table tr {
               <th>Products</th>
               <th>Description</th>
               <th>Price</th>
-              <th>Buy now</th>
+              <th>Buy link</th>
 
             </tr>
           </thead>
@@ -119,14 +134,14 @@ table tr {
           <td>Lenovo 11</td>
           <td>Android-Tablet, LTE-Tablet with 4GB Ram, and 64GB internal memory.</td>
           <td>$300</td>
-          <td>buy</td>
+          <td class="AmazonSamsung"><a href="https://www.amazon.de/Lenovo-Tab-P11-ZA83-microSD-Steckplatz/dp/B0953QDY4S/ref=sr_1_4?__mk_de_DE=%C3%85M%C3%85%C5%BD%C3%95%C3%91&dchild=1&keywords=lenovo+11&qid=1629227589&sr=8-4">link</a></td>
           
           <tr>
             <td><img src="fee_786_587_png.jpg" width = "100" alt="Ipad mini"/></td>
           <td>Ipad mini</td>
           <td>APPLE iPad mini (5. Generation, 2019) Wi-Fi, Tablet, 64 GB, 7,9 Zoll, Space Grey.</td>
           <td>$450</td>
-          <td>buy</td>
+          <td class="AmazonSamsung"><a href="https://www.amazon.de/Apple-iPad-mini-Wi-Fi-64-GB/dp/B07PSKYKGJ/ref=sr_1_1_sspa?__mk_de_DE=%C3%85M%C3%85%C5%BD%C3%95%C3%91&dchild=1&keywords=apple+ipad+mini&qid=1629227484&sr=8-1-spons&psc=1&spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUE0T09INVJNOE1UWkImZW5jcnlwdGVkSWQ9QTA3NjUxMDFFOFBJWUE0WEg5NkQmZW5jcnlwdGVkQWRJZD1BMDUwNjY4NDNIM1BQNEFCQThHV0omd2lkZ2V0TmFtZT1zcF9hdGYmYWN0aW9uPWNsaWNrUmVkaXJlY3QmZG9Ob3RMb2dDbGljaz10cnVl"> link</a></td>
         </tr>
 
         <tr>
@@ -134,7 +149,7 @@ table tr {
         <td>Macbook Air</td>
         <td>APPLE MacBook Air (M1,2020) MGN63D/A, Notebook mit 13,3 Zoll Display, 8 GB RAM, 256 GB SSD, 7-Core GPU, Space Grau.</td>
         <td>$1200</td>
-        <td>buy</td>
+        <td class="AmazonSamsung"> <a href="https://www.amazon.de/Apple-MacBook-Air-mit-Chip/dp/B08N5R7XXZ/ref=sr_1_1_sspa?__mk_de_DE=%C3%85M%C3%85%C5%BD%C3%95%C3%91&dchild=1&keywords=macbook+air&qid=1629227379&sr=8-1-spons&psc=1&spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUFUVk9SWEJESjhQVVcmZW5jcnlwdGVkSWQ9QTA1MTIwNjlXUERFMUpIWkFHWEkmZW5jcnlwdGVkQWRJZD1BMDA1NDY3MUFPSEZFVkVITzdLMyZ3aWRnZXROYW1lPXNwX2F0ZiZhY3Rpb249Y2xpY2tSZWRpcmVjdCZkb05vdExvZ0NsaWNrPXRydWU=">link</a></td>
       </tr>
 
       <tr>
@@ -142,7 +157,7 @@ table tr {
         <td>Iphone 11 pro</td>
         <td>Apple iPhone 11 Pro (256 GB) - Nachtgrün.</td>
         <td>$1500</td>
-        <td>buy</td>
+        <td class="AmazonSamsung"><a href="https://www.amazon.de/Apple-iPhone-11-128-GB-Schwarz/dp/B08L6X41J1/ref=sr_1_1_sspa?__mk_de_DE=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=33W0PKO8PJ03U&dchild=1&keywords=iphone+11+pro&qid=1629227072&sprefix=iphone+11pro%2Caps%2C181&sr=8-1-spons&psc=1&spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUExSzA3OVFKWFMyRVQ3JmVuY3J5cHRlZElkPUEwMzkxMjM5M0FEWTUyNE0zN00zQSZlbmNyeXB0ZWRBZElkPUEwMTU5NTUwWThJMlhXTlJCUlc3JndpZGdldE5hbWU9c3BfYXRmJmFjdGlvbj1jbGlja1JlZGlyZWN0JmRvTm90TG9nQ2xpY2s9dHJ1ZQ==">link</a></td>
       </tr>
     
       <tr>
@@ -150,7 +165,7 @@ table tr {
         <td>Samsung Galaxy A5</td>
         <td>Samsung Galaxy A5 (2017) gold sand.</td>
         <td>$500</td>
-        <td>buy</td>
+        <td class="AmazonSamsung"><a href="https://www.amazon.de/Samsung-Galaxy-2017-Vodafone-otelo-Braun-Gold/dp/B01MUR3YZI/ref=sr_1_3?dchild=1&keywords=Samsung+Galaxy+A5+%282017%29+Gold+Sand&qid=1629226710&sr=8-3"> link</a></td>
       </tr>
      
    </tr>
