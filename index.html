@@ -5,9 +5,83 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Smartphone Shop Website.</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Merriweather|Montserrat|Sacramento&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <style>
-    
+    body {
+  color: #40514E;
+  margin: 0;
+  text-align: center;
+  font-family: 'Merriweather', serif;
+  font-size: 150%;
+}
+
+h1 {
+  color: #66BFBF;
+  font-size: 50px;
+  line-height: 2;
+  margin: 50px auto 0 auto;
+  font-family: sans-serif, cursive;
+}
+h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2.5rem;
+  color: #6b0f0f;
+  font-weight: normal;
+  padding-bottom: 10px;
+}
+/* h3 {
+  color: #11999E;
+  font-family: 'Montserrat', sans-serif;
+} */
+
+p {
+  line-height: 2.5;
+}
+
+hr {
+  border: dotted #EAF6F6 6px;
+  border-bottom: none;
+  width: 4%;
+  margin: 30px auto;
+}
+.top-container {
+  background-color: #e3ecfd;
+  position: relative;
+  padding-top: 30px;
+}
+
+
+ .middle-container {
+ margin: 60px 0;
+ text-size-adjust: 10px;
+
+}
+
+
+.Contact-Us {
+  width: 40%;
+  margin: 40px auto 60px;
+
+}
+
+table {
+   /*  border-collapse: collapse*/
+   
+   border-collapse: separate;
+}
+
+table tr {
+  
+  border: dotted #EAF6F6 6px;
+  border-bottom: none;
+  width: 4%;
+  margin: 30px auto;
+}
+
   </style>
   <body>
     <div class="top-container">
@@ -18,6 +92,14 @@
       /> -->
 
       <h1>Welcome to Electronics MiniShop</h1>
+
+      <button onclick="ChangeH1()">Change H1 text</button>
+      <button onclick="ChangeFooter()">ChangeFooter</button>
+      <button onclick="PageBgColor()">Change Background</button>
+
+    </div>
+      <hr />
+      <div class="middle-container">
       <!-- --
       <h2>New Releases</h2> -->
       <table cellspacing="10">
@@ -29,45 +111,74 @@
               <th>Description</th>
               <th>Price</th>
               <th>Buy now</th>
+
             </tr>
-            <td>img</td>
+          </thead>
+            
+          <td><img src="Lenovo-tab-p11-za7s0044.jpg" width = "100" alt="lenovo tablet"/></td>
           <td>Lenovo 11</td>
-          <td>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet culpa atque suscipit iure consequuntur ex unde velit nihil deserunt officia delectus saepe quibusdam impedit ea consequatur ipsam optio, expedita quam?</td>
+          <td>Android-Tablet, LTE-Tablet with 4GB Ram, and 64GB internal memory.</td>
           <td>$300</td>
           <td>buy</td>
-
+          
           <tr>
-            <td>img</td>
+            <td><img src="fee_786_587_png.jpg" width = "100" alt="Ipad mini"/></td>
           <td>Ipad mini</td>
-          <td>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea voluptates quaerat sunt unde minima quidem asperiores, qui aperiam dolorum totam dicta a facilis at ipsum praesentium incidunt quam recusandae placeat.</td>
+          <td>APPLE iPad mini (5. Generation, 2019) Wi-Fi, Tablet, 64 GB, 7,9 Zoll, Space Grey.</td>
           <td>$450</td>
           <td>buy</td>
         </tr>
-        <td>img</td>
-        <td>Macbook Air</td>
-        <td>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet culpa atque suscipit iure consequuntur ex unde velit nihil deserunt officia delectus saepe quibusdam impedit ea consequatur ipsam optio, expedita quam?</td>
-        <td>$1200</td>
-        <td>buy</td>
 
         <tr>
-          <td>img</td>
-        <td>Iphone 11 pro</td>
-        <td>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea voluptates quaerat sunt unde minima quidem asperiores, qui aperiam dolorum totam dicta a facilis at ipsum praesentium incidunt quam recusandae placeat.</td>
-        <td>$1500</td>
+        <td><img src="macbook-fee_786_587_png.jpg" width = "100" alt="macbook air"/></td>
+        <td>Macbook Air</td>
+        <td>APPLE MacBook Air (M1,2020) MGN63D/A, Notebook mit 13,3 Zoll Display, 8 GB RAM, 256 GB SSD, 7-Core GPU, Space Grau.</td>
+        <td>$1200</td>
         <td>buy</td>
       </tr>
 
       <tr>
-        <td>img</td>
+        <td><img src="81mxun+6pEL._AC_SX522_.jpg" width = "100" alt="iphone 11 Pro"/></td>
+        <td>Iphone 11 pro</td>
+        <td>Apple iPhone 11 Pro (256 GB) - Nachtgrün.</td>
+        <td>$1500</td>
+        <td>buy</td>
+      </tr>
+    
+      <tr>
+        <td><img src="samsunggalaxyA5.jpg" width = "100" alt="Samsung Galaxy A5"/></td>
         <td>Samsung Galaxy A5</td>
-        <td>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea voluptates quaerat sunt unde minima quidem asperiores, qui aperiam dolorum totam dicta a facilis at ipsum praesentium incidunt quam recusandae placeat.</td>
+        <td>Samsung Galaxy A5 (2017) gold sand.</td>
         <td>$500</td>
         <td>buy</td>
       </tr>
-
-        </tr>
-      </thead>
+     
+   </tr>
+      
+   
       </table>
+    </div>
+    <hr />
+    <div class="Contact-Us">
+      <h2>Customer Support</h2>
+      <input id="input1" type="text">
+      <input id="input2" type="text" width>
+
+      <p class="Contact-Us">
+        For further enquiries!! contact us 
+      </p>
+      <a class="btn" href="mailto:gallacero@gmail.com">CONTACT US</a>
+    </div>
+
+    <div class="bottom-container">
+      <a
+        class="footer-link"
+        href="https://www.linkedin.com/in/hilary-ogalagu-231104105/"
+        >LinkedIn</a
+      >
+      <a class="footer-link" href="https://twitter.com/weenix1">Twitter</a>
+      <a class="footer-link" href="https://github.com/weenix1">github Account</a>
+      <p>© 2021 Hilary Ogalagu.</p>
     </div>
   </body>
 </html>
