@@ -108,9 +108,9 @@ table tr {
 
       <h1>Welcome to Electronics MiniShop</h1>
 
-      <button onclick="ChangeH1()">Change H1 text</button>
-      <button onclick="ChangeFooter()">ChangeFooter</button>
-      <button onclick="PageBgColor()">Change Background</button>
+      <button onclick="changeText()">Change H1 text</button>
+      <button onclick="changeBackground()">Change Background</button>
+      <button onclick="changeFooter()">ChangeFooter</button>
 
     </div>
       <hr />
@@ -176,8 +176,14 @@ table tr {
     <hr />
     <div class="Contact-Us">
       <h2>Customer Support</h2>
-      <input id="input1" type="text">
-      <input id="input2" type="text" width>
+      <forms>
+        <input type="text" name="" value=""><br>
+        <input type="submit" name=""><br>
+       
+        <input type="date" name="" value=""><br>
+        
+        <input type="range" name="" value=""><br>
+        </form>
 
       <p class="Contact-Us">
         For further enquiries!! contact us 
@@ -189,11 +195,41 @@ table tr {
       <a
         class="footer-link"
         href="https://www.linkedin.com/in/hilary-ogalagu-231104105/"
-        >LinkedIn</a
-      >
+        >LinkedIn</a>
       <a class="footer-link" href="https://twitter.com/weenix1">Twitter</a>
       <a class="footer-link" href="https://github.com/weenix1">github Account</a>
+      <footer>
+      <p class= "Address">Plot 173 fresh Straße,22052 Hamburg</p>
+    </footer>
       <p>© 2021 Hilary Ogalagu.</p>
     </div>
+
+    <textarea></textarea>
+ 
+  
+    <script type = "text/javascript">
+      
+      let h1
+
+      function changeText(){
+         h1 = document.querySelector("h1")
+         h1.innerHTML = "New Amazon Store"
+         h1.style.color="blue"
+      }
+         
+      function changeBackground(){
+          const backGroundColor = document.querySelector("body")
+          //body.style.backgroundColor = "red"
+          backGroundColor.style.color = "purple"
+      }
+      
+      function changeFooter(){
+          const newFooter =document.querySelector("footer")
+          newFooter.innerHTML = "53 unnastr. 20261, Berlin"
+      }
+
+
+    </script>
+
   </body>
 </html>
